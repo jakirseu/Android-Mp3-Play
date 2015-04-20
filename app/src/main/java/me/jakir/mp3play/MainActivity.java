@@ -36,8 +36,8 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 mp.start();
                 mp.setOnCompletionListener(new OnCompletionListener(){
-                    public void onCompletion(MediaPlayer play){
-                        play.release();
+                    public void onCompletion(MediaPlayer mp){
+                        mp.release();
                     }
                 });
 
